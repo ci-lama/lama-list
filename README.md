@@ -1,4 +1,5 @@
 # LamaList
+[![Build and Test](https://github.com/ci-lama/lama-list/actions/workflows/build_and_test.yml/badge.svg?branch=main)](https://github.com/ci-lama/lama-list/actions/workflows/build_and_test.yml)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.4.
 
