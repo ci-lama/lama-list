@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'lama-list'`, () => {
+  it(`should have as title 'Lama List'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('lama-list');
+    expect(app.title).toEqual('Lama List');
   });
 
-  it('should render title', () => {
+  it('should render title in nav', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('lama-list app is running!');
+    expect(compiled.querySelector('.navbar-brand').textContent).toContain('Lama List');
   });
 });
