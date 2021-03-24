@@ -11,8 +11,8 @@ import { LoginComponent } from './components/login/login.component';
     AuthenticationService
   ],
   declarations: [
-
-  LoginComponent],
+    LoginComponent
+  ],
   imports: [
     CommonModule,
     AuthenticationRoutingModule
