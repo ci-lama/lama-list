@@ -11,6 +11,7 @@ import {Router} from "@angular/router";
 import {throwError} from "rxjs";
 import {JwtInterceptor} from "./jtw.interceptor";
 import {User} from "../model/user.model";
+import {AuthenticationModule} from "../authentication/authentication.module";
 
 describe('JwtInterceptor', () => {
     let sut: JwtInterceptor;
@@ -21,7 +22,7 @@ describe('JwtInterceptor', () => {
     beforeEach(() => {
 
         TestBed.configureTestingModule({
-            imports: [HttpClientTestingModule, AppRoutingModule, RouterTestingModule.withRoutes([])],
+            imports: [AuthenticationModule, HttpClientTestingModule, AppRoutingModule, RouterTestingModule.withRoutes([])],
 
             providers: [
                 AccountService,
