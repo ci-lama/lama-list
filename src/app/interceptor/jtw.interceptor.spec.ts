@@ -4,14 +4,14 @@ import {
 } from '@angular/common/http/testing';
 import { ErrorInterceptor } from './error.interceptor';
 import {HTTP_INTERCEPTORS, HttpClient, HttpRequest} from '@angular/common/http';
-import { AccountService } from '../account/services/account.service';
+import { AccountService } from '../modules/account/services/account.service';
 import { AppRoutingModule } from '../app-routing.module';
 import {RouterTestingModule} from "@angular/router/testing";
 import {Router} from "@angular/router";
 import {throwError} from "rxjs";
 import {JwtInterceptor} from "./jtw.interceptor";
 import {User} from "../model/user.model";
-import {AuthenticationModule} from "../authentication/authentication.module";
+import {AuthenticationModule} from "../modules/authentication/authentication.module";
 
 describe('JwtInterceptor', () => {
     let sut: JwtInterceptor;

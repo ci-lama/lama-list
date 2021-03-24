@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpRequest, HttpHandler, HttpEvent, HttpInterceptor } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import {AccountService} from "../account/services/account.service";
+import {AccountService} from "../modules/account/services/account.service";
 import {environment} from "../../environments/environment";
 
 @Injectable()

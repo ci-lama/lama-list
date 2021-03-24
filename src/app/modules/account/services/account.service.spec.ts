@@ -3,7 +3,7 @@ import { TestBed } from '@angular/core/testing';
 import { AccountService } from './account.service';
 import {RouterTestingModule} from "@angular/router/testing";
 import {HttpClientTestingModule} from "@angular/common/http/testing";
-import {User} from "../../model/user.model";
+import {User} from "../../../model/user.model";
 
 describe('AccountService', () => {
   let service: AccountService;
