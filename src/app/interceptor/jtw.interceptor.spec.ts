@@ -4,7 +4,7 @@ import {
 } from '@angular/common/http/testing';
 import { ErrorInterceptor } from './error.interceptor';
 import {HTTP_INTERCEPTORS, HttpClient, HttpRequest} from '@angular/common/http';
-import { AccountService } from '../authentication/services/account.service';
+import { AccountService } from '../account/services/account.service';
 import { AppRoutingModule } from '../app-routing.module';
 import {RouterTestingModule} from "@angular/router/testing";
 import {Router} from "@angular/router";
