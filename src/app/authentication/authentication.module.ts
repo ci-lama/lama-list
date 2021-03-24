@@ -6,8 +6,11 @@ import { AuthenticationService } from './services/authentication.service';
 
 
 @NgModule({
-  declarations: [
+  providers: [
     AuthenticationService
+  ],
+  declarations: [
+
   ],
   imports: [
     CommonModule,
