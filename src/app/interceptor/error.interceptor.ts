@@ -10,14 +10,12 @@ export class ErrorInterceptor implements HttpInterceptor {
 
     intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
         return next.handle(request).pipe(catchError(err => {
-            console.log("Deine Mutter " + JSON.stringify(err))
             if (err.status === 401) {
-                console.log("Forbidden. Triggering logout")
+                console.error("Forbidden. Triggering logout")
                 // auto logout if 401 response returned from api
                 this.accountService.logout();
             }
 
-            console.log("Dein Vadder wirft errors")
             const error = err.error.message || err.statusText;
             return throwError(error);
         }))
