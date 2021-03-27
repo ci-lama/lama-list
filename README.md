@@ -1,5 +1,6 @@
 # LamaList
 [![Build and Test](https://github.com/ci-lama/lama-list/actions/workflows/build_and_test.yml/badge.svg?branch=main)](https://github.com/ci-lama/lama-list/actions/workflows/build_and_test.yml)
+[![codecov](https://codecov.io/gh/ci-lama/lama-list/branch/main/graph/badge.svg?token=NWN4ONR5QH)](https://codecov.io/gh/ci-lama/lama-list)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.4.
 
