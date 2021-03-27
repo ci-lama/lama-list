@@ -34,10 +34,6 @@ describe('AuthenticationGuard', () => {
     router = TestBed.inject(Router)
   });
 
-  it('should be created', () => {
-    expect(sut).toBeTruthy();
-  });
-
   describe("when user is logged in", () => {
     beforeEach(() => {
       spyOn(authenticationService, 'isUserLoggedIn').and.returnValue(true);

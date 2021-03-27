@@ -11,9 +11,7 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [15.x]
@@ -26,7 +24,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}    
     - run: npm ci
-    - run: npm run build --if-present
     - run: npm test --code-coverage
     - uses: codecov/codecov-action@v1
       with:

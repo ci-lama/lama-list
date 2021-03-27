@@ -37,7 +37,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      type : 'lcov',
+      type : 'lcovonly',
       dir : 'coverage/'
     },
     preprocessors: {
