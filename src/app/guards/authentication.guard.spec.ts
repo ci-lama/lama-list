@@ -25,8 +25,8 @@ describe('AuthenticationGuard', () => {
 
   beforeEach(() => {
 
-
     TestBed.configureTestingModule({
+      providers: [AuthenticationService],
       imports: [HttpClientTestingModule, RouterTestingModule.withRoutes([])],
     });
 
