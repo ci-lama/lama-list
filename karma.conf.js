@@ -37,14 +37,13 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/lama-list'),
-      subdir: '.',
-      reporters: [
-        { type: 'html' },
-        { type: 'text-summary' }
-      ]
+      type : 'lcov',
+      dir : 'coverage/'
     },
-    reporters: ['progress', 'kjhtml', "spec"],
+    preprocessors: {
+      'src/app/**/*.js': ['coverage']
+    },
+    reporters: ['progress', 'coverage', 'kjhtml', "spec"],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
